@@ -1,0 +1,36 @@
+﻿@model Dashboard.Models.Statistics
+
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Statistics</h2>
+<div class="container">
+    <div class="">
+        <div>
+            <h2>Today Sales</h2>
+            <a href="DaySale" class="bg-warning btn btn-dark w-25">
+                @Model.Today
+            </a>
+        </div>
+        <div>
+            <h2>This month Sales</h2>
+            <a href="MonthSale"  class="bg-primary btn btn-danger w-25">
+                @Model.ThisMonth
+            </a>
+        </div>
+        <div>
+            <h2>This year Sales</h2>
+            <a href="YearSale" class="bg-secondary btn btn-secondary w-25">
+                @Model.ThisYear
+            </a>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="btn btn-dark mt-3 " style="width:7.5rem">
+        @Html.ActionLink("Back", "index")
+    </p>
+</div>

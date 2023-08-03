@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Dashboard.Models.Products>
+
+@{
+    ViewBag.Title = "MonthSale";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MonthSale</h2>
+
+<p class="btn btn-secondary">
+    @Html.ActionLink("Back", "statistics")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PurchaseDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PurchaseDate)
+        </td>
+       
+    </tr>
+ }
+
+</table>
