@@ -34,7 +34,10 @@ namespace Dashboard.Controllers
                         Id = (int)reader["Id"],
                         ProductName = reader["Product_Name"].ToString(),
                         Amount = (int)reader["Amount"],
-                        PurchaseDate = (DateTime)reader["Purchase_Date"]
+                        PurchaseDate = (DateTime)reader["Purchase_Date"],
+                        Customer = reader["Customer_Name"].ToString(),
+                        Place= reader["Place"].ToString(),
+                        PaidStatus= reader["Paid_Status"].ToString()
                     });
                 }
                 return View(products);
@@ -93,7 +96,10 @@ namespace Dashboard.Controllers
                         Id = (int)reader["Id"],
                         ProductName = reader["Product_Name"].ToString(),
                         Amount = (int)reader["Amount"],
-                        PurchaseDate = (DateTime)reader["Purchase_Date"]
+                        PurchaseDate = (DateTime)reader["Purchase_Date"],
+                          Customer = reader["Customer_Name"].ToString(),
+                        Place = reader["Place"].ToString(),
+                        PaidStatus = reader["Paid_Status"].ToString()
                     });
                 }
                 return View(products);
@@ -122,7 +128,10 @@ namespace Dashboard.Controllers
                         Id = (int)reader["Id"],
                         ProductName = reader["Product_Name"].ToString(),
                         Amount = (int)reader["Amount"],
-                        PurchaseDate = (DateTime)reader["Purchase_Date"]
+                        PurchaseDate = (DateTime)reader["Purchase_Date"],
+                        Customer = reader["Customer_Name"].ToString(),
+                        Place = reader["Place"].ToString(),
+                        PaidStatus = reader["Paid_Status"].ToString()
                     });
                 }
                 return View(products);
@@ -151,7 +160,10 @@ namespace Dashboard.Controllers
                         Id = (int)reader["Id"],
                         ProductName = reader["Product_Name"].ToString(),
                         Amount = (int)reader["Amount"],
-                        PurchaseDate = (DateTime)reader["Purchase_Date"]
+                        PurchaseDate = (DateTime)reader["Purchase_Date"],
+                        Customer = reader["Customer_Name"].ToString(),
+                        Place = reader["Place"].ToString(),
+                        PaidStatus = reader["Paid_Status"].ToString()
                     });
                 }
                 return View(products);

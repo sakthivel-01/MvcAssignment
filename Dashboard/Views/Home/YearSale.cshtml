@@ -21,6 +21,15 @@
         <th>
             @Html.DisplayNameFor(model => model.PurchaseDate)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Place)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaidStatus)
+        </th>
         <th></th>
     </tr>
 
@@ -35,7 +44,16 @@
         <td>
             @Html.DisplayFor(modelItem => item.PurchaseDate)
         </td>
-       
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Place)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaidStatus)
+        </td>
+
     </tr>
 }
 

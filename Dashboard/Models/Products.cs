@@ -21,5 +21,17 @@ namespace Dashboard.Models
         [Required]
         public DateTime PurchaseDate { get; set; }
 
+        [Required]
+        public String Customer { get; set; }
+
+        [Required]
+        public String Place{ get; set; }
+
+        [Required]
+        public String PaidStatus { get; set; }
+
+
+
+
     }
 }
